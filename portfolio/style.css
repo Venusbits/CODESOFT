@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: antiquewhite;
+    color: #000;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 200px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;  
+}
+nav ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 0 40px;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.row1{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.imgBox{
+    flex-basis: 35%;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+.header-text{
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+.row2{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img2{
+    flex-basis: 35%;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    width: 300px;
+}
+.para{
+    text-align: center;
+    position: absolute;
+    top:90%;
+    left:33%;
+    right:20%;
+    width:60%;
+    bottom: 200%;
+    height:60%;
+    color: #fff;
+}
+.square{
+    flex-basis: 60%;
+    position: absolute;
+    top:80%;
+    left:30%;
+    right:20%;
+    width:65%;
+    height:60%;
+    background:#00282cd4;
+    border-radius: 50px;
+  /*  clip-path: square(800px at right 800px);*/
+}
+.sub-title.abt{
+    position: absolute;
+    top:85%;
+    left:30%;
+    right:60%;
+    width:65%;
+    color: #000;
+}
+.sub-title{
+    text-align: center;
+}
+.tab-contents{
+    position: absolute;
+    text-align: center;
+    top: 115%;
+    left: 55%;
+}
+.tab-links{
+    margin-right: 20px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    text-align: center;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    top: 160%;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    text-align: center;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #000;
+    font-size: 14px;
+    text-align: center;
+    font-size: 16px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#contact{
+    position: absolute;
+    top: 150%;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #000;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact-left .social-icons i{
+    font-size: 25px;
+    color: #000;
+    margin: 20px 10px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons i:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px, 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff004f;
+}
+.btn.btn1{
+    display: inline-block;
+    background: #ff004f;
+    color: #000;
+    margin-top: 10px;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
+    color: #000;
+    font-size: 18px;
+    border-radius: 6px;
+    top: 50%;
+}
+.copyright{
+    width: 152%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}

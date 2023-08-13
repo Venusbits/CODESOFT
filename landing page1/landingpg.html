@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shoeniverse Website landing page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+       <a href="#"><img src="images/logo.jpg" class="logo"</a>
+       <ul>
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Menu</a></li>
+         <li><a href="#">New Deals</a></li>
+         <li><a href="#">Contact</a></li>
+       </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>It's not just Shoe <br/> It's <span>"Shoeniverse"</span></h2>
+        <p>We love shoes!We have created a Shoeniverse website. This website shows all types of brands available in market and displays latest hot trends and sales we offered in our shop for our regular customers and also for new customers who will love to try our footwears. Whichever brand they love we have the best quality.</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="imgBox">
+          <img src="images/airjordan.png" class="shoeniverse">
+      </div>
+    </div>
+    <ul class="thumb">
+       <li><img src="images/pooma bootswo2.png" onclick="imgSlider(adidas_boot1.png);changeCircleCOlor('#017143')"></li>
+       <li><img src="images/adidas boot1.png" onclick="imgSlider(adidas.png);changeCircleCOlor('#eb7495')"></li>
+       <li><img src="images/adidas.png" onclick="imgSlider(poomabootswo2.png);changeCircleCOlor('#d752b1')"></li>
+    </ul>
+    <ul class="sci">
+       <li><a href="#"><img src="images/1390599458_pinterest_icon.png"></a></li>
+       <li><a href="#"><img src="images/Twitter-icon.png"></a></li>
+       <li><a href="#"><img src="images/facebook.png"></a></li>
+       <li><a href="#"><img src="images/Instagram_Icon.png"></a></li>
+    </ul>
+</section>
+
+   <script type="text/javascript">
+       function imgSlider(anything) {
+           document.querySelector('.shoeniverse').src = anything;
+       }
+
+       function changeCircleColor(color) {
+           const circle= document.querySelctor('.circle');
+           circle.style.background= color;
+       }
+   </script>
+</body>
+</html>
